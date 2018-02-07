@@ -1,3 +1,7 @@
 file created at some-branch, not master
 
 am doing this to generate a revision that is not on the master "path", to test if I can check it out correctly through git command line
+
+
+SECOND COMMIT:
+added another commit to the branch, because I will try to checkout a "middle sha" of it, not the "branch head".
