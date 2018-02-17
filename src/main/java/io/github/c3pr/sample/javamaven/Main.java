@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         String someString = args[0];
         // trigger
-        if (someString.equals("a string at the right-hand side")) {
+        if ("a string at the right-hand side".equals(someString)) {
             System.out.println("Equals...");
         } else System.out.println("Else without braces");
     }
