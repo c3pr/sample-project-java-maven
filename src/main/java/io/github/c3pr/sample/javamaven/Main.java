@@ -1,6 +1,5 @@
 package io.github.c3pr.sample.javamaven;
 
-import java.util.List;
 
 public class Main {
 
