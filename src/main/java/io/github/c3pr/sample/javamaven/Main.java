@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello C-3PR");
         String primeiroArg = args[0];
-        if (primeiroArg.equals("algo")) {
+        if ("algo".equals(primeiroArg)) {
             // comando
         }
     }
