@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Hello C-3PR");
         String primeiroArg = args[0];
         if (primeiroArg.equals("algo")) {
-            // comandox
+            // comando
         }
     }
 
