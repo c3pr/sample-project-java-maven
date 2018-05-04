@@ -15,15 +15,15 @@ public class IssueUseStringEquals {
         if (str2 == "blue") {
             System.out.println("they're both 'blue' 3"); // this doesn't print because the objects are different
         }
-        //endregion
-
-        //region NOT covered by current sonar:UseStringEquals
         if (str1 != "blue") {
             System.out.println("they're both 'blue' 2"); // this prints
         }
         if (str2 != "blue") {
             System.out.println("they're both 'blue' 3"); // this doesn't print because the objects are different
         }
+        //endregion
+
+        //region NOT covered by current sonar:UseStringEquals
         if (str1 == str2) {
             System.out.println("they're both 'blue' 1"); // this doesn't print because the objects are different
         }
