@@ -1,4 +1,4 @@
-package io.github.c3pr.sample.javamaven;
+package io.github.c3pr.sample.javamaven.walkmod;
 
 public class IssueUseStringEquals {
 
@@ -23,7 +23,6 @@ public class IssueUseStringEquals {
         //endregion
 
         //region NOT covered by current sonar:UseStringEquals
-        String strThree = strOne;
         if (strOne == strTwo) {
             System.out.println("comparing two string references, not one string reference and one literal");
         }
