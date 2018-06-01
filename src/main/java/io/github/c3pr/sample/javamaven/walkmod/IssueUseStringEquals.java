@@ -3,27 +3,27 @@ package io.github.c3pr.sample.javamaven.walkmod;
 public class IssueUseStringEquals {
 
     public static void main(String[] args) {
-        String strOne = "blue";
-        String strTwo = new String("blue");
+        String blueHardcoded = "blue";
+        String blueViaConstructor = new String("blue");
 
 
         //region COVERED BY CURRENT sonar:UseStringEquals
-        if (strOne == "blue") {
-            System.out.println("strOne is \"blue\""); // prints
+        if (blueHardcoded == "blue") {
+            System.out.println("blueHardcoded is \"blue\""); // prints
         }
-        if (strTwo == "blue") {
-            System.out.println("strTwo is \"blue\""); // DOESN'T print
+        if (blueViaConstructor == "blue") {
+            System.out.println("blueViaConstructor is \"blue\""); // DOESN'T print
         }
-        if (strOne != "blue") {
-            System.out.println("strOne is not \"blue\""); // prints
+        if (blueHardcoded != "blue") {
+            System.out.println("blueHardcoded is not \"blue\""); // DOESN'T print
         }
-        if (strTwo != "blue") {
-            System.out.println("strTwo is not \"blue\""); // DOESN'T print
+        if (blueViaConstructor != "blue") {
+            System.out.println("blueViaConstructor is not \"blue\""); // prints
         }
         //endregion
 
         //region NOT covered by current sonar:UseStringEquals
-        if (strOne == strTwo) {
+        if (blueHardcoded == blueViaConstructor) {
             System.out.println("comparing two string references, not one string reference and one literal");
         }
         //endregion
