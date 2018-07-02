@@ -12,6 +12,16 @@ public class RemoveEmptyStatement {
             }
         }
 
+        for (int i = 0; i < 42; i++){}
+
+        if (yay.equals(new Support().someStringMethod())) {
+
+        }
+        ;
+        ;
+        ;
+        ;
+
         return "" + yay;
     }
 

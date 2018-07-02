@@ -1,7 +1,7 @@
 package io.github.c3pr.sample.javamaven.walkmod.support;
 
-public interface Support {
+public class Support {
 
-    String someStringMethod();
+    public String someStringMethod() { return "something" + Math.random(); }
 
 }
